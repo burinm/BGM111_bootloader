@@ -1,0 +1,70 @@
+#ISD afv6
+# Simplicity Studio version: 5.0.0.201811140904-1361
+
+# Application configuration
+stackId: com.silabs.sdk.stack.super
+stackRoot: /home/burin/SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v2.4
+appId: bootloader
+frameworkRoot: platform/bootloader
+architecture: efr32~family[B]~series[1]~device_configuration[1]~performance[B]~radio[232]~flash[256K]~temp[G]~package[M]~pins[48]~module[BGM111A256V2]+BRD4300A+gcc
+exactArchitectureToolchain: com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904
+deviceName: bootloader-uart-bgapi
+sourceSampleAppId: bootloader-uart-bgapi
+generationDirectory: PATH(ISC_RELATIVE):.
+
+# Devices
+
+# Plugin configuration
+appPlugin: bgapi-uart-dfu=true
+appPlugin: core=true
+appPlugin: crc=true
+appPlugin: crypto=true
+appPlugin: debug=false
+appPlugin: delay-driver=true
+appPlugin: emlib=true
+appPlugin: ezsp-spi=false
+appPlugin: gbl-compression-lz4=false
+appPlugin: gbl-compression-lzma=false
+appPlugin: gpio-activation=true
+appPlugin: internal_flash=false
+appPlugin: mbedtls=true
+appPlugin: parser=true
+appPlugin: parser-eblv2=false
+appPlugin: parser-noenc=false
+appPlugin: spi-driver=false
+appPlugin: spiflash=false
+appPlugin: spislave-driver=false
+appPlugin: storage-common=false
+appPlugin: storage-common-single=false
+appPlugin: token-management=true
+appPlugin: uart-driver=true
+appPlugin: upgrade-version=false
+appPlugin: xmodem-parser=false
+appPlugin: xmodem-uart=false
+
+# Setup configurations
+{setupId:additionalFiles
+}
+{setupId:bootloaderStorage
+}
+{setupId:callbackConfiguration
+}
+{setupId:hwConfig
+lastArchitectureId=efr32~family[B]~series[1]~device_configuration[1]~performance[B]~radio[232]~flash[256K]~temp[G]~package[M]~pins[48]~module[BGM111A256V2]+BRD4300A+gcc
+featureLevel=1
+active=true
+lastHwConfFileUsed=PATH(ISC_RELATIVE):brd4300a_bgm111a256v2.hwconf
+}
+{setupId:information
+\{key:description
+
+\}
+}
+{setupId:macros
+}
+{setupId:quizz
+}
+{setupId:template
+}
+
+# Plugin options
